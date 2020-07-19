@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Welcome</title>
     <environment include="Development">
-        @*<link rel="stylesheet" href="http://indianbusinessmachine.com/css/mytailwind.css" />*@
-        <link rel="stylesheet" href="~/css/mystyle.css" asp-append-version="true" />
+        <link rel="stylesheet" href="http://indianbusinessmachine.com/css/mytailwind.css"
+              asp-fallback-href="~/lib/bootstrap/dist/css/bootstrap.min.css"
+              asp-fallback-test-class="sr-only" asp-fallback-test-property="position" asp-fallback-test-value="absolute" />
+
     </environment>
 
     <style>
